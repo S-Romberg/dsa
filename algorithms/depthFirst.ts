@@ -1,14 +1,4 @@
-export class TreeNode {
-  constructor(
-    public value: string | number, 
-    public left?: TreeNode, 
-    public right?: TreeNode
-  ) {
-    this.value = value;
-    this.left = left;
-    this.right = right;
-  }
-}
+import { TreeNode } from '../data_structures/treeNode'
 
 const root = new TreeNode('a')
 const b = new TreeNode('b')

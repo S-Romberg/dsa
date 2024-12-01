@@ -1,4 +1,4 @@
-import maxValue from '../algorithms/max_value';
+import maxValue from '../algorithms/maxValue';
 import { benchmark } from '../utils/benchmark';
 import { memoryBenchmark } from '../utils/memoryBenchmark';
 

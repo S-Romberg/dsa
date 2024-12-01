@@ -1,4 +1,5 @@
-import { TreeNode, depthFirst } from '../algorithms/depth_first'
+import { depthFirst } from '../algorithms/depthFirst'
+import { TreeNode } from '../data_structures/treeNode'
 
 describe('depthFirst', () => {
   test('should traverse a simple tree', () => {

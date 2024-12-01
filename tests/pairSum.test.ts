@@ -1,4 +1,4 @@
-import { pairSum } from '../algorithms/pair_sum'
+import { pairSum } from '../algorithms/pairSum'
 
 describe('pairSum', () => {
   test('should find indices of two numbers that sum to target (any order)', () => {
