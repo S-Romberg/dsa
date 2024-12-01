@@ -1,11 +1,11 @@
 import { depthFirst } from '../algorithms/depthFirst'
-import { TreeNode } from '../data_structures/treeNode'
+import { StringTreeNode } from '../data_structures/treeNode'
 
 describe('depthFirst', () => {
   test('should traverse a simple tree', () => {
-    const tree = new TreeNode(1);
-    tree.left = new TreeNode(2);
-    tree.right = new TreeNode(3);
+    const tree = new StringTreeNode(1);
+    tree.left = new StringTreeNode(2);
+    tree.right = new StringTreeNode(3);
     /*
          1
         / \
@@ -15,10 +15,10 @@ describe('depthFirst', () => {
   })
 
   test('should handle deeper left-side nodes', () => {
-    const tree = new TreeNode(1);
-    tree.left = new TreeNode(2);
-    tree.left.left = new TreeNode(3);
-    tree.right = new TreeNode(4);
+    const tree = new StringTreeNode(1);
+    tree.left = new StringTreeNode(2);
+    tree.left.left = new StringTreeNode(3);
+    tree.right = new StringTreeNode(4);
     /*
          1
         / \
@@ -30,9 +30,9 @@ describe('depthFirst', () => {
   })
 
   test('should handle deeper right-side nodes', () => {
-    const tree = new TreeNode(1);
-    tree.right = new TreeNode(2);
-    tree.right.right = new TreeNode(3);
+    const tree = new StringTreeNode(1);
+    tree.right = new StringTreeNode(2);
+    tree.right.right = new StringTreeNode(3);
     /*
        1
         \
@@ -48,12 +48,12 @@ describe('depthFirst', () => {
   })
 
   test('should handle complex tree', () => {
-    const tree = new TreeNode(1);
-    tree.left = new TreeNode(2);
-    tree.right = new TreeNode(3);
-    tree.left.left = new TreeNode(4);
-    tree.left.right = new TreeNode(5);
-    tree.right.left = new TreeNode(6);
+    const tree = new StringTreeNode(1);
+    tree.left = new StringTreeNode(2);
+    tree.right = new StringTreeNode(3);
+    tree.left.left = new StringTreeNode(4);
+    tree.left.right = new StringTreeNode(5);
+    tree.right.left = new StringTreeNode(6);
     /*
           
     */

@@ -1,4 +1,4 @@
-import isAnagram from './anagram'
+import isAnagram from '../algorithms/anagram'
 
 // An anagram is a string that contains the same characters in any order
 describe('Anagram', () => {

@@ -1,40 +1,13 @@
-import { TreeNode } from '../data_structures/treeNode'
-
-const root = new TreeNode('a')
-const b = new TreeNode('b')
-const c = new TreeNode('c')
-const d = new TreeNode('d')
-const e = new TreeNode('e')
-const f = new TreeNode('f')
-const g = new TreeNode('g')
-const h = new TreeNode('h')
-const i = new TreeNode('i')
-//      a
-//     / \
-//    b   c
-//   / \   \
-//  d   e   f
-// /       / \
-//g       h   i
-root.left = b
-root.right = c
-b.left = d
-b.right = e
-d.left = g
-c.right = f
-f.left = h
-f.right = i
-
-
+import { StringTreeNode, exampleRoot } from '../data_structures/treeNode'
 // Goes to the left all the way down
 // returns a,b,d,g,e,c,f,h,i
-export const depthFirst = (tree: TreeNode): (string | number)[] => {
+export const depthFirst = (tree: StringTreeNode): (string | number)[] => {
   // Add children to stack as you go
-  // Push right children first, this keep left children to the top
+  // Push right children first, this keeps left children to the top
   // Check if children exist before pushing them to stack
-  let current: TreeNode | null = tree
+  let current: StringTreeNode | null = tree
   const output: (string | number)[] = []
-  const stack: TreeNode[] = []
+  const stack: StringTreeNode[] = []
 
   while (current) { 
     output.push(current.value)
@@ -52,6 +25,4 @@ export const depthFirst = (tree: TreeNode): (string | number)[] => {
   return output;
 }
 
-
-depthFirst(root)
-
+depthFirst(exampleRoot)
